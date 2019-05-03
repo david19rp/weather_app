@@ -1,0 +1,21 @@
+.result{
+    padding-top:45px;
+    width: 800px;
+    margin: 0 auto;
+    color : goldenrod;
+    text-align: center;
+    
+}
+h2{
+    color:grey;
+}
+.text-center{
+    color:goldenrod;
+}
+h1.mainHeader{
+    color:lightblue;
+}
+h1{
+    color:red;
+    
+}
