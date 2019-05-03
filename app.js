@@ -1,11 +1,18 @@
 
 $(document).ready(function(){
-    let $myPoint = "https://api.openweathermap.org/data/2.5/weather?q=";
+    
     $("#submit").on('click',function(){
-        let $inputValue = $("#inputVal").val();
         
-        if($inputValue!= ""){
-            console.log($inputValue);
+        let $inputValue = $("#inputVal").val();
+        let $myKey = "&APPID=d6ac9a8b8d7c463ad353c08b092e0cd9";
+        let $myPoint = "https://api.openweathermap.org/data/2.5/weather?q="+$inputValue+$myKey;
+        console.log($myPoint);
+        if($inputValue!=""){
+            $.get($myPoint, function (data,status) {
+                console.log("the temp is" +" "+ data);
+                // let total = data.weather[0];    
+                // return "<p>total</p>";    
+            })
         }else{
             console.log("salio");
         }
@@ -16,9 +23,7 @@ $(document).ready(function(){
 
   
 
-    // $.get($myPoint, function (data,status) {
-        
-    // })
+   
 
 // d6ac9a8b8d7c463ad353c08b092e0cd9
 
