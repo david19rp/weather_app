@@ -8,8 +8,10 @@ $(document).ready(function(){
         let $myPoint = "https://api.openweathermap.org/data/2.5/weather?q="+$inputValue+$myKey;
         if($inputValue!= ''){
             $.get($myPoint, function (data,status) {
+            
                 let widget = show(data);
                 $("#show").html(widget);
+                
                 // $("#inputVal").val('');
             })
         }else{
@@ -26,15 +28,4 @@ function show(data){
     "<h3><strong>Humidity</strong> : "+ data.main.humidity+"</h3>" 
 }
 
-
-
-  
-
-   
-
-// d6ac9a8b8d7c463ad353c08b092e0cd9
-
-
-
-//Heredia,CR&appid=a7885bf35c64037d8462ae5f2ecbb0ac
 
