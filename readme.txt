@@ -1,0 +1,1 @@
+The app is working, just need to fix the responsive, but if you want to help please just fork the repo, https://david19rp.github.io/weather_app/
